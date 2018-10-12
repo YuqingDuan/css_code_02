@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>priority</title>
+	<style type="text/css">
+	#con{
+			color: pink;
+			font-size:100px;
+	}		
+	.box{
+			color:green;
+			font-size: 60px;
+	}
+	div{
+		color:red !important;
+		font-size:60px !important;
+	}
+	</style>
+</head>
+<body>
+	<!-- 浏览器渲染引擎的默认样式0<标签选择器1<类选择器10<ID选择器100<行内样式1000<!important1000以上 -->
+	<div class="box" id="con" style="font-size:12px; color:yellow;">这是div标签</div>
+</body>
+</html>

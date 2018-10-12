@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS format</title>
+
+	<!-- 1.CSS的内嵌式写法<style type="text/css"></style>, 作用范围是当前HTML页面, 没有真正实现结构HTML和表现CSS分离-->
+	<style type="text/css">
+		.box{
+			font: italic 700 54px microsoft yahei;
+		}
+	</style>
+
+	<!-- 2.CSS的外链式(重要)写法<link rel="stylesheet" href="">, 作用范围是当前站点, 真正实现结构HTML和表现CSS分离-->
+	<link rel="stylesheet" href="format.css">
+</head>
+<body>
+	<div class="box">
+		<p>这是p标签</p>
+	</div>
+
+	<!-- 3.CSS的行内式写法<h1 style=""></h1>, 最差的一种写法, 仅仅在测试时候使用-->
+	<h1 style="font-size: 80px; color: red;">这是h1标签</h1>
+</body>
+</html>
