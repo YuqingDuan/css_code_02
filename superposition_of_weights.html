@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Superposition of weights</title>
+	<style type="text/css">
+		/*权重为11*/
+	    p.son{
+			font-size: 120px;
+			color: yellow;
+		}
+		/*权重为1*/
+		p{    
+			font-size:30px;
+			color:red;
+		}
+		/*权重为20*/
+		.father .son{        
+			font-size:500px;
+			color: pink;
+		}
+		/*权重为10*/
+		.son{
+			font-size: 60px;
+			color: blue;
+		}
+		/*权重为110*/
+		.father #baby{
+			font-size:12px;
+			color: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="father">
+		<!-- 12px + orange -->
+		<p class="son" id="baby">我是什么颜色?</p>
+	</div>
+</body>
+</html>

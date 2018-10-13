@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>priorities of selector</title>
+	<style type="text/css">
+		#box{
+			color: green;
+			font-size:500px;
+		}
+		.father{
+			font-size:60px;
+			color:red;
+		}
+		p{
+			font-size:20px;
+			color:blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="father" id="box">
+		ID选择器优先级大于类选择器!
+		<p>继承的权重为!</p>
+	</div>
+</body>
+</html>
